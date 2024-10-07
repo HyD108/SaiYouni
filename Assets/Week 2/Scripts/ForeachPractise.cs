@@ -37,13 +37,22 @@ public class ForeachPractise : MonoBehaviour
     // Bài Tập 1: In Tất Cả Các Phần Tử Trong Mảng
     void BaiTap1()
     {
+        foreach (int i in numbers)
+        {
+            Debug.Log(i);
+        }
         // Tạo một mảng số nguyên
         // Sử dụng foreach để in tất cả các phần tử trong mảng
     }
 
     // Bài Tập 2: Tính Tổng Các Phần Tử Trong Mảng
-    void BaiTap2()
-    {
+    void BaiTap2() {
+    int sum = 0;
+        foreach (int i in numbers)
+        {
+            sum += i;
+        }
+        Debug.Log(sum);
         // Tạo một mảng số nguyên
         // Sử dụng foreach để tính tổng tất cả các phần tử trong mảng
     }
@@ -51,6 +60,15 @@ public class ForeachPractise : MonoBehaviour
     // Bài Tập 3: Tìm Phần Tử Lớn Nhất Trong Mảng
     void BaiTap3()
     {
+        int max = numbers[0];
+        foreach (int i in numbers)
+        {
+            if(i > max)
+            {
+                max = i;
+            }
+        }
+        Debug.Log(max);
         // Tạo một mảng số nguyên
         // Sử dụng foreach để tìm phần tử lớn nhất trong mảng
     }
@@ -58,6 +76,15 @@ public class ForeachPractise : MonoBehaviour
     // Bài Tập 4: Đếm Số Lượng Số Chẵn Trong Mảng
     void BaiTap4()
     {
+        int count = 0;
+        foreach (int i in numbers)
+        {
+            if(i % 2 == 0)
+            {
+                count++;
+            }
+        }
+        Debug.Log(count);
         // Tạo một mảng số nguyên
         // Sử dụng foreach để đếm số lượng phần tử chẵn trong mảng
     }

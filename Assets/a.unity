@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 395982982}
   - component: {fileID: 395982981}
+  - component: {fileID: 395982983}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395982980}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ba82206dc9d2774198ab675c7b2e278, type: 3}
   m_Name: 
@@ -169,6 +170,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &395982983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 395982980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d25014dd031926a49b4ace5dfc7c8c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  number: 8
+  average: 6.6
+  firstNumber: 7
+  secondNumber: 6
+  money: 10000
+  price: 7000
+  year: 10
+  age: 20
+  averageGrade: 8
+  num1: 5
+  num2: 6
+  num3: 8
+  totalTime: 50
+  salary: 5000000
+  bonus: 6
+  memberCard: 1
+  electricityUsage: 100
+  workingYears: 20
+  goodPerformence: 1
+  orderValue: 400000
+  income: 400000
+  testScore1: 6
+  testScore2: 9
+  testScore3: 7
+  currentStock: 80
+  storageCapacity: 100
+  hasCompletedBasicCourse: 1
+  finalGrade: 9
+  hasRecommendationLetter: 1
 --- !u!1 &1582907422
 GameObject:
   m_ObjectHideFlags: 0
