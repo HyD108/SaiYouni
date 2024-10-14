@@ -6,17 +6,9 @@ public class MaxValues : MonoBehaviour
 {
     void Start()
     {
-        // Giá trị lớn nhất của int
-        int maxInt = 0;
-        Debug.Log("Giá trị lớn nhất của int: " + maxInt);
-
-        // Giá trị lớn nhất của float
-        float maxFloat = 0;
-        Debug.Log("Giá trị lớn nhất của float: " + maxFloat);
-
-        // Giá trị lớn nhất của double
-        double maxDouble = 0;
-        Debug.Log("Giá trị lớn nhất của double: " + maxDouble);
+        Debug.Log("Max value of int: " + int.MaxValue);
+        Debug.Log("Max value of float: " + float.MaxValue);
+        Debug.Log("Max value of double: " + double.MaxValue);
     }
 
 }

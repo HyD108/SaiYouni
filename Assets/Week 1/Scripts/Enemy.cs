@@ -4,29 +4,63 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public int health = 100;
+    public float speed = 5.0f;
+    public int strength = 20;
+    public int experienceValue = 50;
+    public string state = "chasing";
 
-    // 5 Enemies variables
+    public Transform player;
 
-    //variables 1 
+    void Start()
+    {
+    }
 
-    //variables 2
+    void Update()
+    {
+        if (health <= 0)
+        {
+            Die();
+        }
+        else if (state == "chasing")
+        {
+            Chase(player);
+        }
+    }
 
-    //variables 3 
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
 
-    //variables 4 
+    void Attack()
+    {
+    }
 
-    //variables 5 
+    void Die()
+    {
+        Destroy(gameObject);
+    }
 
+    public void GainExperience(int amount)
+    {
+        experienceValue += amount;
+    }
 
-    // 5 Enemies methods
+    void Chase(Transform player)
+    {
+        if (player != null)
+        {
+            Vector3 direction = (player.position - transform.position).normalized;
+            transform.Translate(direction * speed * Time.deltaTime);
+        }
+    }
 
-    //Method 1
-
-    //Method 2
-
-    //Method 3
-
-    //Method 4
-
-    //Method 5
+    void MoveTowardsPlayer(Transform player)
+    {
+    }
 }
